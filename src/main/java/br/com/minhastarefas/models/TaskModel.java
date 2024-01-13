@@ -13,8 +13,14 @@ public class TaskModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID idProduct;
+
+    @Column(name = "title", nullable = false, length = 40)
     private String title;
+
+    @Column(name = "description", nullable = false, length = 120)
     private String description;
+
+    @Column(name = "status", columnDefinition = "BOOLEAN", nullable = false)
     private Boolean status;
 
 

@@ -10,5 +10,10 @@ spring:
     show_sql: false
     open-in-view: false
 
+springdoc:
+  paths-to-match: "/tasks/**"
+  swagger-ui:
+    use-root-path: true
 
-#        em ddl-auto / (em produção) depois alterar de update para none
+
+#        Para produção: em ddl-auto, alterar de (update) para (none)
