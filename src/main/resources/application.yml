@@ -6,7 +6,7 @@ spring:
     password: admin123
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     show_sql: false
     open-in-view: false
 
